@@ -1,0 +1,1 @@
+cmd_/home/pi/driver/5_oled_driver/oleddri.ko := ld -r  -EL  --build-id=sha1  -T scripts/module.lds -o /home/pi/driver/5_oled_driver/oleddri.ko /home/pi/driver/5_oled_driver/oleddri.o /home/pi/driver/5_oled_driver/oleddri.mod.o;  true

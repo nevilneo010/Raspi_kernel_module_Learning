@@ -1,0 +1,1 @@
+cmd_/home/pi/driver/3_auto_device_file/autodev.ko := ld -r  -EL  --build-id=sha1  -T scripts/module.lds -o /home/pi/driver/3_auto_device_file/autodev.ko /home/pi/driver/3_auto_device_file/autodev.o /home/pi/driver/3_auto_device_file/autodev.mod.o;  true

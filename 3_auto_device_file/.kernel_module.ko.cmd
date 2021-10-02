@@ -1,0 +1,1 @@
+cmd_/home/pi/driver/3_auto_device_file/kernel_module.ko := ld -r  -EL  --build-id=sha1  -T scripts/module.lds -o /home/pi/driver/3_auto_device_file/kernel_module.ko /home/pi/driver/3_auto_device_file/kernel_module.o /home/pi/driver/3_auto_device_file/kernel_module.mod.o;  true

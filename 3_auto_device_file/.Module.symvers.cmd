@@ -1,0 +1,1 @@
+cmd_/home/pi/driver/3_auto_device_file/Module.symvers := sed 's/ko$$/o/' /home/pi/driver/3_auto_device_file/modules.order | scripts/mod/modpost -m -a   -o /home/pi/driver/3_auto_device_file/Module.symvers -e -i Module.symvers   -T -

@@ -1,0 +1,1 @@
+cmd_/home/pi/driver/4_gpio_drive/gpiodri.ko := ld -r  -EL  --build-id=sha1  -T scripts/module.lds -o /home/pi/driver/4_gpio_drive/gpiodri.ko /home/pi/driver/4_gpio_drive/gpiodri.o /home/pi/driver/4_gpio_drive/gpiodri.mod.o;  true
