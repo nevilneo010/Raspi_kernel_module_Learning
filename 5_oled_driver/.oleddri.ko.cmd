@@ -1,1 +1,1 @@
-cmd_/home/pi/driver/5_oled_driver/oleddri.ko := ld -r  -EL  --build-id=sha1  -T scripts/module.lds -o /home/pi/driver/5_oled_driver/oleddri.ko /home/pi/driver/5_oled_driver/oleddri.o /home/pi/driver/5_oled_driver/oleddri.mod.o;  true
+cmd_/home/nevil/project/raspi/driver/5_oled_driver/oleddri.ko := ld -r -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/nevil/project/raspi/driver/5_oled_driver/oleddri.ko /home/nevil/project/raspi/driver/5_oled_driver/oleddri.o /home/nevil/project/raspi/driver/5_oled_driver/oleddri.mod.o;  true

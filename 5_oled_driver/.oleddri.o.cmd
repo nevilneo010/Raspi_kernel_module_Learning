@@ -1,8 +1,8 @@
-cmd_/home/pi/driver/5_oled_driver/oleddri.o := gcc -Wp,-MMD,/home/pi/driver/5_oled_driver/.oleddri.o.d  -nostdinc -isystem /usr/lib/gcc/arm-linux-gnueabihf/8/include -I./arch/arm/include -I./arch/arm/include/generated  -I./include -I./arch/arm/include/uapi -I./arch/arm/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -fmacro-prefix-map=./= -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu89 -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -fno-ipa-sra -mabi=aapcs-linux -mfpu=vfp -marm -Wa,-mno-warn-deprecated -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wimplicit-fallthrough -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -pg -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wno-packed-not-aligned  -DMODULE  -DKBUILD_BASENAME='"oleddri"' -DKBUILD_MODNAME='"oleddri"' -c -o /home/pi/driver/5_oled_driver/oleddri.o /home/pi/driver/5_oled_driver/oleddri.c
+cmd_/home/nevil/project/raspi/driver/5_oled_driver/oleddri.o := gcc -Wp,-MMD,/home/nevil/project/raspi/driver/5_oled_driver/.oleddri.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/9/include  -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -Iubuntu/include  -include ./include/linux/compiler_types.h -D__KERNEL__ -fmacro-prefix-map=./= -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Werror=return-type -Wno-format-security -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -fcf-protection=none -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -DCONFIG_X86_X32_ABI -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -fno-jump-tables -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-address-of-packed-member -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wimplicit-fallthrough -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -gsplit-dwarf -gdwarf-4 -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -Wno-packed-not-aligned  -DMODULE  -DKBUILD_BASENAME='"oleddri"' -DKBUILD_MODNAME='"oleddri"' -c -o /home/nevil/project/raspi/driver/5_oled_driver/oleddri.o /home/nevil/project/raspi/driver/5_oled_driver/oleddri.c
 
-source_/home/pi/driver/5_oled_driver/oleddri.o := /home/pi/driver/5_oled_driver/oleddri.c
+source_/home/nevil/project/raspi/driver/5_oled_driver/oleddri.o := /home/nevil/project/raspi/driver/5_oled_driver/oleddri.c
 
-deps_/home/pi/driver/5_oled_driver/oleddri.o := \
+deps_/home/nevil/project/raspi/driver/5_oled_driver/oleddri.o := \
   include/linux/kconfig.h \
     $(wildcard include/config/cc/version/text.h) \
     $(wildcard include/config/cpu/big/endian.h) \
@@ -10,14 +10,12 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/foo.h) \
   include/linux/compiler_types.h \
     $(wildcard include/config/have/arch/compiler/h.h) \
-    $(wildcard include/config/enable/must/check.h) \
     $(wildcard include/config/cc/has/asm/inline.h) \
   include/linux/compiler_attributes.h \
   include/linux/compiler-gcc.h \
     $(wildcard include/config/arm64.h) \
     $(wildcard include/config/retpoline.h) \
     $(wildcard include/config/arch/use/builtin/bswap.h) \
-    $(wildcard include/config/kcov.h) \
   include/linux/module.h \
     $(wildcard include/config/modules.h) \
     $(wildcard include/config/sysfs.h) \
@@ -31,6 +29,7 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/tracepoints.h) \
     $(wildcard include/config/tree/srcu.h) \
     $(wildcard include/config/bpf/events.h) \
+    $(wildcard include/config/debug/info/btf/modules.h) \
     $(wildcard include/config/jump/label.h) \
     $(wildcard include/config/tracing.h) \
     $(wildcard include/config/event/tracing.h) \
@@ -49,28 +48,29 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
   include/uapi/linux/types.h \
-  arch/arm/include/uapi/asm/types.h \
+  arch/x86/include/generated/uapi/asm/types.h \
+  include/uapi/asm-generic/types.h \
   include/asm-generic/int-ll64.h \
   include/uapi/asm-generic/int-ll64.h \
-  arch/arm/include/generated/uapi/asm/bitsperlong.h \
+  arch/x86/include/uapi/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
   include/uapi/asm-generic/bitsperlong.h \
   include/uapi/linux/posix_types.h \
   include/linux/stddef.h \
   include/uapi/linux/stddef.h \
   include/linux/compiler_types.h \
-  arch/arm/include/uapi/asm/posix_types.h \
+  arch/x86/include/asm/posix_types.h \
+    $(wildcard include/config/x86/32.h) \
+  arch/x86/include/uapi/asm/posix_types_64.h \
   include/uapi/asm-generic/posix_types.h \
   include/linux/poison.h \
     $(wildcard include/config/illegal/pointer/value.h) \
-    $(wildcard include/config/page/poisoning/zero.h) \
   include/linux/const.h \
   include/vdso/const.h \
   include/uapi/linux/const.h \
   include/linux/kernel.h \
     $(wildcard include/config/preempt/voluntary.h) \
     $(wildcard include/config/debug/atomic/sleep.h) \
-    $(wildcard include/config/preempt/rt.h) \
     $(wildcard include/config/mmu.h) \
     $(wildcard include/config/prove/locking.h) \
     $(wildcard include/config/panic/timeout.h) \
@@ -85,107 +85,81 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/module/rel/crcs.h) \
     $(wildcard include/config/have/arch/prel32/relocations.h) \
     $(wildcard include/config/trim/unused/ksyms.h) \
-  arch/arm/include/asm/linkage.h \
   include/linux/compiler.h \
     $(wildcard include/config/trace/branch/profiling.h) \
     $(wildcard include/config/profile/all/branches.h) \
     $(wildcard include/config/stack/validation.h) \
-  arch/arm/include/generated/asm/rwonce.h \
+  arch/x86/include/generated/asm/rwonce.h \
   include/asm-generic/rwonce.h \
   include/linux/kasan-checks.h \
-    $(wildcard include/config/kasan.h) \
+    $(wildcard include/config/kasan/generic.h) \
+    $(wildcard include/config/kasan/sw/tags.h) \
   include/linux/kcsan-checks.h \
     $(wildcard include/config/kcsan.h) \
     $(wildcard include/config/kcsan/ignore/atomics.h) \
+  arch/x86/include/asm/linkage.h \
+    $(wildcard include/config/x86/64.h) \
+    $(wildcard include/config/x86/alignment/16.h) \
   include/linux/bitops.h \
   include/linux/bits.h \
   include/vdso/bits.h \
   include/linux/build_bug.h \
-  arch/arm/include/asm/bitops.h \
-  include/linux/irqflags.h \
-    $(wildcard include/config/trace/irqflags.h) \
-    $(wildcard include/config/irqsoff/tracer.h) \
-    $(wildcard include/config/preempt/tracer.h) \
-    $(wildcard include/config/trace/irqflags/support.h) \
-  include/linux/typecheck.h \
-  arch/arm/include/asm/irqflags.h \
-    $(wildcard include/config/cpu/v7m.h) \
-  arch/arm/include/asm/ptrace.h \
-    $(wildcard include/config/arm/thumb.h) \
-    $(wildcard include/config/thumb2/kernel.h) \
-  arch/arm/include/uapi/asm/ptrace.h \
-    $(wildcard include/config/cpu/endian/be8.h) \
-  arch/arm/include/asm/hwcap.h \
-  arch/arm/include/uapi/asm/hwcap.h \
-  include/asm-generic/irqflags.h \
-  arch/arm/include/asm/percpu.h \
-    $(wildcard include/config/cpu/v6.h) \
-  include/asm-generic/percpu.h \
-    $(wildcard include/config/debug/preempt.h) \
-    $(wildcard include/config/have/setup/per/cpu/area.h) \
-  include/linux/threads.h \
-    $(wildcard include/config/nr/cpus.h) \
-    $(wildcard include/config/base/small.h) \
-  include/linux/percpu-defs.h \
-    $(wildcard include/config/debug/force/weak/per/cpu.h) \
-    $(wildcard include/config/amd/mem/encrypt.h) \
-  arch/arm/include/asm/barrier.h \
-    $(wildcard include/config/cpu/32v6k.h) \
-    $(wildcard include/config/cpu/xsc3.h) \
-    $(wildcard include/config/cpu/fa526.h) \
-    $(wildcard include/config/arm/heavy/mb.h) \
-    $(wildcard include/config/arm/dma/mem/bufferable.h) \
-    $(wildcard include/config/cpu/spectre.h) \
+  include/uapi/linux/kernel.h \
+  include/uapi/linux/sysinfo.h \
+  arch/x86/include/asm/bitops.h \
+    $(wildcard include/config/x86/cmov.h) \
+  arch/x86/include/asm/alternative.h \
+  arch/x86/include/asm/asm.h \
+  arch/x86/include/asm/rmwcc.h \
+    $(wildcard include/config/cc/has/asm/goto.h) \
+  arch/x86/include/asm/barrier.h \
+  arch/x86/include/asm/nops.h \
+    $(wildcard include/config/mk7.h) \
+    $(wildcard include/config/x86/p6/nop.h) \
   include/asm-generic/barrier.h \
-  include/asm-generic/bitops/non-atomic.h \
-  include/asm-generic/bitops/builtin-__fls.h \
-  include/asm-generic/bitops/builtin-__ffs.h \
-  include/asm-generic/bitops/builtin-fls.h \
-  include/asm-generic/bitops/builtin-ffs.h \
-  include/asm-generic/bitops/ffz.h \
-  include/asm-generic/bitops/fls64.h \
-  include/asm-generic/bitops/sched.h \
-  include/asm-generic/bitops/hweight.h \
-  include/asm-generic/bitops/arch_hweight.h \
-  include/asm-generic/bitops/const_hweight.h \
-  include/asm-generic/bitops/lock.h \
-  include/linux/atomic.h \
-  arch/arm/include/asm/atomic.h \
-    $(wildcard include/config/generic/atomic64.h) \
-    $(wildcard include/config/arm/lpae.h) \
-  include/linux/prefetch.h \
-  arch/arm/include/asm/processor.h \
-    $(wildcard include/config/have/hw/breakpoint.h) \
-    $(wildcard include/config/binfmt/elf/fdpic.h) \
-  arch/arm/include/asm/hw_breakpoint.h \
-  arch/arm/include/asm/unified.h \
-  arch/arm/include/asm/vdso/processor.h \
-    $(wildcard include/config/arm/errata/754327.h) \
-  arch/arm/include/asm/cache.h \
-    $(wildcard include/config/arm/l1/cache/shift.h) \
-    $(wildcard include/config/aeabi.h) \
-  arch/arm/include/asm/cmpxchg.h \
-    $(wildcard include/config/cpu/sa1100.h) \
-    $(wildcard include/config/cpu/sa110.h) \
-  include/asm-generic/cmpxchg-local.h \
-  include/linux/atomic-fallback.h \
-  include/asm-generic/atomic-long.h \
   include/asm-generic/bitops/find.h \
     $(wildcard include/config/generic/find/first/bit.h) \
+  include/asm-generic/bitops/sched.h \
+  arch/x86/include/asm/arch_hweight.h \
+  arch/x86/include/asm/cpufeatures.h \
+  arch/x86/include/asm/required-features.h \
+    $(wildcard include/config/x86/minimum/cpu/family.h) \
+    $(wildcard include/config/math/emulation.h) \
+    $(wildcard include/config/x86/pae.h) \
+    $(wildcard include/config/x86/cmpxchg64.h) \
+    $(wildcard include/config/x86/use/3dnow.h) \
+    $(wildcard include/config/matom.h) \
+    $(wildcard include/config/paravirt/xxl.h) \
+  arch/x86/include/asm/disabled-features.h \
+    $(wildcard include/config/x86/smap.h) \
+    $(wildcard include/config/x86/umip.h) \
+    $(wildcard include/config/x86/intel/memory/protection/keys.h) \
+    $(wildcard include/config/x86/5level.h) \
+    $(wildcard include/config/page/table/isolation.h) \
+    $(wildcard include/config/x86/sgx.h) \
+  include/asm-generic/bitops/const_hweight.h \
+  include/asm-generic/bitops/instrumented-atomic.h \
+  include/linux/instrumented.h \
+  include/asm-generic/bitops/instrumented-non-atomic.h \
+    $(wildcard include/config/kcsan/assume/plain/writes/atomic.h) \
+  include/asm-generic/bitops/instrumented-lock.h \
   include/asm-generic/bitops/le.h \
-  arch/arm/include/uapi/asm/byteorder.h \
+  arch/x86/include/uapi/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/uapi/linux/byteorder/little_endian.h \
   include/linux/swab.h \
   include/uapi/linux/swab.h \
-  arch/arm/include/asm/swab.h \
-  arch/arm/include/uapi/asm/swab.h \
+  arch/x86/include/uapi/asm/swab.h \
   include/linux/byteorder/generic.h \
   include/asm-generic/bitops/ext2-atomic-setbit.h \
   include/linux/log2.h \
     $(wildcard include/config/arch/has/ilog2/u32.h) \
     $(wildcard include/config/arch/has/ilog2/u64.h) \
+  include/linux/math.h \
+  arch/x86/include/asm/div64.h \
+  include/asm-generic/div64.h \
   include/linux/minmax.h \
+  include/linux/typecheck.h \
   include/linux/printk.h \
     $(wildcard include/config/message/loglevel/default.h) \
     $(wildcard include/config/console/loglevel/default.h) \
@@ -193,6 +167,7 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/early/printk.h) \
     $(wildcard include/config/printk/nmi.h) \
     $(wildcard include/config/printk.h) \
+    $(wildcard include/config/kmsg/ids.h) \
     $(wildcard include/config/dynamic/debug.h) \
     $(wildcard include/config/dynamic/debug/core.h) \
   include/linux/init.h \
@@ -201,32 +176,37 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
   include/linux/kern_levels.h \
   include/linux/cache.h \
     $(wildcard include/config/arch/has/cache/line/size.h) \
-  include/uapi/linux/kernel.h \
-  include/uapi/linux/sysinfo.h \
+  arch/x86/include/asm/cache.h \
+    $(wildcard include/config/x86/l1/cache/shift.h) \
+    $(wildcard include/config/x86/internode/cache/shift.h) \
+    $(wildcard include/config/x86/vsmp.h) \
   include/linux/ratelimit_types.h \
   include/uapi/linux/param.h \
-  arch/arm/include/generated/uapi/asm/param.h \
+  arch/x86/include/generated/uapi/asm/param.h \
   include/asm-generic/param.h \
     $(wildcard include/config/hz.h) \
   include/uapi/asm-generic/param.h \
   include/linux/spinlock_types.h \
     $(wildcard include/config/debug/spinlock.h) \
     $(wildcard include/config/debug/lock/alloc.h) \
-  arch/arm/include/asm/spinlock_types.h \
+  arch/x86/include/asm/spinlock_types.h \
+  include/asm-generic/qspinlock_types.h \
+    $(wildcard include/config/nr/cpus.h) \
+  include/asm-generic/qrwlock_types.h \
   include/linux/lockdep_types.h \
     $(wildcard include/config/prove/raw/lock/nesting.h) \
     $(wildcard include/config/preempt/lock.h) \
     $(wildcard include/config/lockdep.h) \
     $(wildcard include/config/lock/stat.h) \
   include/linux/rwlock_types.h \
-  arch/arm/include/asm/div64.h \
-  arch/arm/include/asm/compiler.h \
-  include/asm-generic/div64.h \
+  include/linux/dynamic_debug.h \
+  include/linux/jump_label.h \
+    $(wildcard include/config/have/arch/jump/label/relative.h) \
+  arch/x86/include/asm/jump_label.h \
   include/linux/stat.h \
-  arch/arm/include/uapi/asm/stat.h \
+  arch/x86/include/uapi/asm/stat.h \
   include/uapi/linux/stat.h \
   include/linux/time.h \
-    $(wildcard include/config/arch/uses/gettimeoffset.h) \
     $(wildcard include/config/posix/timers.h) \
   include/linux/math64.h \
     $(wildcard include/config/arch/supports/int128.h) \
@@ -238,7 +218,161 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
   include/linux/time32.h \
   include/linux/timex.h \
   include/uapi/linux/timex.h \
-  arch/arm/include/asm/timex.h \
+  arch/x86/include/asm/timex.h \
+  arch/x86/include/asm/processor.h \
+    $(wildcard include/config/x86/vmx/feature/names.h) \
+    $(wildcard include/config/x86/iopl/ioperm.h) \
+    $(wildcard include/config/stackprotector.h) \
+    $(wildcard include/config/vm86.h) \
+    $(wildcard include/config/x86/debugctlmsr.h) \
+    $(wildcard include/config/cpu/sup/amd.h) \
+    $(wildcard include/config/xen.h) \
+  arch/x86/include/asm/processor-flags.h \
+  arch/x86/include/uapi/asm/processor-flags.h \
+  include/linux/mem_encrypt.h \
+    $(wildcard include/config/arch/has/mem/encrypt.h) \
+    $(wildcard include/config/amd/mem/encrypt.h) \
+  arch/x86/include/asm/mem_encrypt.h \
+  arch/x86/include/uapi/asm/bootparam.h \
+  include/linux/screen_info.h \
+  include/uapi/linux/screen_info.h \
+  include/linux/apm_bios.h \
+  include/uapi/linux/apm_bios.h \
+  include/uapi/linux/ioctl.h \
+  arch/x86/include/generated/uapi/asm/ioctl.h \
+  include/asm-generic/ioctl.h \
+  include/uapi/asm-generic/ioctl.h \
+  include/linux/edd.h \
+  include/uapi/linux/edd.h \
+  arch/x86/include/asm/ist.h \
+  arch/x86/include/uapi/asm/ist.h \
+  include/video/edid.h \
+    $(wildcard include/config/x86.h) \
+  include/uapi/video/edid.h \
+  arch/x86/include/asm/math_emu.h \
+  arch/x86/include/asm/ptrace.h \
+    $(wildcard include/config/paravirt.h) \
+    $(wildcard include/config/ia32/emulation.h) \
+  arch/x86/include/asm/segment.h \
+    $(wildcard include/config/xen/pv.h) \
+    $(wildcard include/config/x86/32/lazy/gs.h) \
+  arch/x86/include/asm/page_types.h \
+    $(wildcard include/config/physical/start.h) \
+    $(wildcard include/config/physical/align.h) \
+    $(wildcard include/config/dynamic/physical/mask.h) \
+  arch/x86/include/asm/page_64_types.h \
+    $(wildcard include/config/kasan.h) \
+    $(wildcard include/config/dynamic/memory/layout.h) \
+    $(wildcard include/config/randomize/base.h) \
+  arch/x86/include/asm/kaslr.h \
+    $(wildcard include/config/randomize/memory.h) \
+  arch/x86/include/uapi/asm/ptrace.h \
+  arch/x86/include/uapi/asm/ptrace-abi.h \
+  arch/x86/include/asm/paravirt_types.h \
+    $(wildcard include/config/pgtable/levels.h) \
+    $(wildcard include/config/paravirt/debug.h) \
+  arch/x86/include/asm/desc_defs.h \
+  arch/x86/include/asm/pgtable_types.h \
+    $(wildcard include/config/mem/soft/dirty.h) \
+    $(wildcard include/config/have/arch/userfaultfd/wp.h) \
+    $(wildcard include/config/proc/fs.h) \
+  arch/x86/include/asm/pgtable_64_types.h \
+    $(wildcard include/config/debug/kmap/local/force/map.h) \
+  arch/x86/include/asm/sparsemem.h \
+    $(wildcard include/config/sparsemem.h) \
+    $(wildcard include/config/numa/keep/meminfo.h) \
+  arch/x86/include/asm/nospec-branch.h \
+  include/linux/static_key.h \
+  include/linux/objtool.h \
+  arch/x86/include/asm/alternative-asm.h \
+  arch/x86/include/asm/msr-index.h \
+  arch/x86/include/asm/unwind_hints.h \
+  arch/x86/include/asm/orc_types.h \
+  arch/x86/include/asm/proto.h \
+  arch/x86/include/uapi/asm/ldt.h \
+  arch/x86/include/uapi/asm/sigcontext.h \
+  arch/x86/include/asm/current.h \
+  arch/x86/include/asm/percpu.h \
+    $(wildcard include/config/x86/64/smp.h) \
+  include/asm-generic/percpu.h \
+    $(wildcard include/config/debug/preempt.h) \
+    $(wildcard include/config/have/setup/per/cpu/area.h) \
+  include/linux/threads.h \
+    $(wildcard include/config/base/small.h) \
+  include/linux/percpu-defs.h \
+    $(wildcard include/config/debug/force/weak/per/cpu.h) \
+  arch/x86/include/asm/page.h \
+  arch/x86/include/asm/page_64.h \
+    $(wildcard include/config/debug/virtual.h) \
+    $(wildcard include/config/flatmem.h) \
+    $(wildcard include/config/x86/vsyscall/emulation.h) \
+  include/linux/range.h \
+  include/asm-generic/memory_model.h \
+    $(wildcard include/config/discontigmem.h) \
+    $(wildcard include/config/sparsemem/vmemmap.h) \
+  include/linux/pfn.h \
+  include/asm-generic/getorder.h \
+  arch/x86/include/asm/msr.h \
+  arch/x86/include/asm/msr-index.h \
+  arch/x86/include/generated/uapi/asm/errno.h \
+  include/uapi/asm-generic/errno.h \
+  include/uapi/asm-generic/errno-base.h \
+  arch/x86/include/asm/cpumask.h \
+  include/linux/cpumask.h \
+    $(wildcard include/config/cpumask/offstack.h) \
+    $(wildcard include/config/hotplug/cpu.h) \
+    $(wildcard include/config/debug/per/cpu/maps.h) \
+  include/linux/bitmap.h \
+  include/linux/string.h \
+    $(wildcard include/config/binary/printf.h) \
+    $(wildcard include/config/fortify/source.h) \
+  include/linux/errno.h \
+  include/uapi/linux/errno.h \
+  include/uapi/linux/string.h \
+  arch/x86/include/asm/string.h \
+  arch/x86/include/asm/string_64.h \
+    $(wildcard include/config/arch/has/uaccess/flushcache.h) \
+  include/linux/atomic.h \
+  arch/x86/include/asm/atomic.h \
+  arch/x86/include/asm/cmpxchg.h \
+  arch/x86/include/asm/cmpxchg_64.h \
+  arch/x86/include/asm/atomic64_64.h \
+  include/linux/atomic-arch-fallback.h \
+    $(wildcard include/config/generic/atomic64.h) \
+  include/asm-generic/atomic-instrumented.h \
+  include/asm-generic/atomic-long.h \
+  include/linux/bug.h \
+    $(wildcard include/config/bug/on/data/corruption.h) \
+  arch/x86/include/asm/bug.h \
+    $(wildcard include/config/debug/bugverbose.h) \
+  include/linux/instrumentation.h \
+    $(wildcard include/config/debug/entry.h) \
+  include/asm-generic/bug.h \
+    $(wildcard include/config/bug.h) \
+    $(wildcard include/config/generic/bug/relative/pointers.h) \
+  arch/x86/include/uapi/asm/msr.h \
+  include/linux/tracepoint-defs.h \
+  arch/x86/include/asm/paravirt.h \
+    $(wildcard include/config/paravirt/spinlocks.h) \
+  arch/x86/include/asm/frame.h \
+    $(wildcard include/config/frame/pointer.h) \
+  arch/x86/include/asm/special_insns.h \
+  include/linux/irqflags.h \
+    $(wildcard include/config/trace/irqflags.h) \
+    $(wildcard include/config/irqsoff/tracer.h) \
+    $(wildcard include/config/preempt/tracer.h) \
+    $(wildcard include/config/trace/irqflags/support.h) \
+  arch/x86/include/asm/irqflags.h \
+  arch/x86/include/asm/fpu/types.h \
+  arch/x86/include/asm/vmxfeatures.h \
+  arch/x86/include/asm/vdso/processor.h \
+  include/linux/personality.h \
+  include/uapi/linux/personality.h \
+  include/linux/err.h \
+  arch/x86/include/asm/tsc.h \
+    $(wildcard include/config/x86/tsc.h) \
+  arch/x86/include/asm/cpufeature.h \
+    $(wildcard include/config/x86/feature/names.h) \
   include/vdso/time32.h \
   include/vdso/time.h \
   include/linux/uidgid.h \
@@ -258,115 +392,59 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/cma.h) \
   include/linux/mmdebug.h \
     $(wildcard include/config/debug/vm.h) \
-    $(wildcard include/config/debug/virtual.h) \
     $(wildcard include/config/debug/vm/pgflags.h) \
-  include/linux/bug.h \
-    $(wildcard include/config/bug/on/data/corruption.h) \
-  arch/arm/include/asm/bug.h \
-    $(wildcard include/config/debug/bugverbose.h) \
-  arch/arm/include/asm/opcodes.h \
-    $(wildcard include/config/cpu/endian/be32.h) \
-  include/asm-generic/bug.h \
-    $(wildcard include/config/bug.h) \
-    $(wildcard include/config/generic/bug/relative/pointers.h) \
-  include/linux/instrumentation.h \
-    $(wildcard include/config/debug/entry.h) \
   include/linux/mmzone.h \
     $(wildcard include/config/force/max/zoneorder.h) \
     $(wildcard include/config/memory/isolation.h) \
     $(wildcard include/config/zsmalloc.h) \
     $(wildcard include/config/shadow/call/stack.h) \
     $(wildcard include/config/memcg.h) \
-    $(wildcard include/config/need/multiple/nodes.h) \
-    $(wildcard include/config/sparsemem.h) \
     $(wildcard include/config/memory/hotplug.h) \
     $(wildcard include/config/compaction.h) \
-    $(wildcard include/config/discontigmem.h) \
     $(wildcard include/config/transparent/hugepage.h) \
     $(wildcard include/config/flat/node/mem/map.h) \
     $(wildcard include/config/page/extension.h) \
     $(wildcard include/config/deferred/struct/page/init.h) \
     $(wildcard include/config/have/memoryless/nodes.h) \
-    $(wildcard include/config/flatmem.h) \
-    $(wildcard include/config/sparsemem/vmemmap.h) \
+    $(wildcard include/config/need/multiple/nodes.h) \
     $(wildcard include/config/sparsemem/extreme.h) \
     $(wildcard include/config/memory/hotremove.h) \
     $(wildcard include/config/have/arch/pfn/valid.h) \
     $(wildcard include/config/holes/in/zone.h) \
-    $(wildcard include/config/arch/has/holes/memorymodel.h) \
   include/linux/spinlock.h \
     $(wildcard include/config/preemption.h) \
   include/linux/preempt.h \
     $(wildcard include/config/preempt/count.h) \
     $(wildcard include/config/trace/preempt/toggle.h) \
     $(wildcard include/config/preempt/notifiers.h) \
-  arch/arm/include/generated/asm/preempt.h \
-  include/asm-generic/preempt.h \
+  arch/x86/include/asm/preempt.h \
   include/linux/thread_info.h \
     $(wildcard include/config/thread/info/in/task.h) \
+    $(wildcard include/config/generic/entry.h) \
     $(wildcard include/config/have/arch/within/stack/frames.h) \
     $(wildcard include/config/hardened/usercopy.h) \
   include/linux/restart_block.h \
-  include/linux/errno.h \
-  include/uapi/linux/errno.h \
-  arch/arm/include/generated/uapi/asm/errno.h \
-  include/uapi/asm-generic/errno.h \
-  include/uapi/asm-generic/errno-base.h \
-  arch/arm/include/asm/thread_info.h \
-    $(wildcard include/config/stackprotector/per/task.h) \
-    $(wildcard include/config/crunch.h) \
-    $(wildcard include/config/arm/thumbee.h) \
-  arch/arm/include/asm/fpstate.h \
-    $(wildcard include/config/vfpv3.h) \
-    $(wildcard include/config/iwmmxt.h) \
-  arch/arm/include/asm/page.h \
-    $(wildcard include/config/cpu/copy/v4wt.h) \
-    $(wildcard include/config/cpu/copy/v4wb.h) \
-    $(wildcard include/config/cpu/copy/feroceon.h) \
-    $(wildcard include/config/cpu/copy/fa.h) \
-    $(wildcard include/config/cpu/xscale.h) \
-    $(wildcard include/config/cpu/copy/v6.h) \
-    $(wildcard include/config/kuser/helpers.h) \
-  arch/arm/include/asm/glue.h \
-  arch/arm/include/asm/pgtable-2level-types.h \
-  arch/arm/include/asm/memory.h \
-    $(wildcard include/config/need/mach/memory/h.h) \
-    $(wildcard include/config/page/offset.h) \
-    $(wildcard include/config/dram/base.h) \
-    $(wildcard include/config/dram/size.h) \
-    $(wildcard include/config/xip/kernel.h) \
-    $(wildcard include/config/have/tcm.h) \
-    $(wildcard include/config/arm/patch/phys/virt.h) \
-    $(wildcard include/config/phys/offset.h) \
-    $(wildcard include/config/xip/phys/addr.h) \
-  include/linux/sizes.h \
-  include/asm-generic/memory_model.h \
-  include/linux/pfn.h \
-  include/asm-generic/getorder.h \
+  arch/x86/include/asm/thread_info.h \
+    $(wildcard include/config/compat.h) \
   include/linux/bottom_half.h \
   include/linux/lockdep.h \
     $(wildcard include/config/debug/locking/api/selftests.h) \
   include/linux/smp.h \
     $(wildcard include/config/up/late/init.h) \
-  include/linux/cpumask.h \
-    $(wildcard include/config/cpumask/offstack.h) \
-    $(wildcard include/config/hotplug/cpu.h) \
-    $(wildcard include/config/debug/per/cpu/maps.h) \
-  include/linux/bitmap.h \
-  include/linux/string.h \
-    $(wildcard include/config/binary/printf.h) \
-    $(wildcard include/config/fortify/source.h) \
-  include/uapi/linux/string.h \
-  arch/arm/include/asm/string.h \
-    $(wildcard include/config/bcm2835/fast/memcpy.h) \
   include/linux/smp_types.h \
   include/linux/llist.h \
     $(wildcard include/config/arch/have/nmi/safe/cmpxchg.h) \
-  arch/arm/include/asm/smp.h \
-  arch/arm/include/generated/asm/mmiowb.h \
+  arch/x86/include/asm/smp.h \
+    $(wildcard include/config/x86/local/apic.h) \
+    $(wildcard include/config/debug/nmi/selftest.h) \
+  arch/x86/include/generated/asm/mmiowb.h \
   include/asm-generic/mmiowb.h \
     $(wildcard include/config/mmiowb.h) \
-  arch/arm/include/asm/spinlock.h \
+  arch/x86/include/asm/spinlock.h \
+  arch/x86/include/asm/qspinlock.h \
+  include/asm-generic/qspinlock.h \
+  arch/x86/include/asm/qrwlock.h \
+  include/asm-generic/qrwlock.h \
   include/linux/rwlock.h \
     $(wildcard include/config/preempt.h) \
   include/linux/spinlock_api_smp.h \
@@ -401,13 +479,11 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/inline/read/unlock/irqrestore.h) \
     $(wildcard include/config/inline/write/unlock/irqrestore.h) \
   include/linux/wait.h \
-  arch/arm/include/generated/asm/current.h \
-  include/asm-generic/current.h \
   include/uapi/linux/wait.h \
   include/linux/numa.h \
     $(wildcard include/config/nodes/shift.h) \
-    $(wildcard include/config/numa/keep/meminfo.h) \
   include/linux/seqlock.h \
+    $(wildcard include/config/preempt/rt.h) \
   include/linux/mutex.h \
     $(wildcard include/config/mutex/spin/on/owner.h) \
     $(wildcard include/config/debug/mutexes.h) \
@@ -421,7 +497,7 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/hugetlb/page/size/variable.h) \
   include/linux/page-flags-layout.h \
     $(wildcard include/config/numa/balancing.h) \
-    $(wildcard include/config/kasan/sw/tags.h) \
+    $(wildcard include/config/kasan/hw/tags.h) \
   include/generated/bounds.h \
   include/linux/mm_types.h \
     $(wildcard include/config/have/aligned/struct/page.h) \
@@ -436,10 +512,10 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
   include/linux/mm_types_task.h \
     $(wildcard include/config/split/ptlock/cpus.h) \
     $(wildcard include/config/arch/enable/split/pmd/ptlock.h) \
+  arch/x86/include/asm/tlbbatch.h \
   include/linux/auxvec.h \
   include/uapi/linux/auxvec.h \
-  arch/arm/include/asm/auxvec.h \
-  arch/arm/include/uapi/asm/auxvec.h \
+  arch/x86/include/uapi/asm/auxvec.h \
   include/linux/rbtree.h \
   include/linux/rcupdate.h \
     $(wildcard include/config/preempt/rcu.h) \
@@ -460,11 +536,15 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
   include/linux/rwsem.h \
     $(wildcard include/config/rwsem/spin/on/owner.h) \
     $(wildcard include/config/debug/rwsems.h) \
-  include/linux/err.h \
   include/linux/completion.h \
   include/linux/swait.h \
   include/linux/uprobes.h \
     $(wildcard include/config/uprobes.h) \
+  arch/x86/include/asm/uprobes.h \
+  include/linux/notifier.h \
+  include/linux/srcu.h \
+    $(wildcard include/config/tiny/srcu.h) \
+    $(wildcard include/config/srcu.h) \
   include/linux/workqueue.h \
     $(wildcard include/config/debug/objects/work.h) \
     $(wildcard include/config/freezer.h) \
@@ -478,13 +558,17 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
   include/generated/timeconst.h \
   include/vdso/ktime.h \
   include/linux/timekeeping.h \
-  include/linux/timekeeping32.h \
+    $(wildcard include/config/generic/cmos/update.h) \
   include/linux/debugobjects.h \
     $(wildcard include/config/debug/objects.h) \
     $(wildcard include/config/debug/objects/free.h) \
-  arch/arm/include/asm/mmu.h \
-    $(wildcard include/config/cpu/has/asid.h) \
-    $(wildcard include/config/vdso.h) \
+  include/linux/rcu_segcblist.h \
+  include/linux/srcutree.h \
+  include/linux/rcu_node_tree.h \
+    $(wildcard include/config/rcu/fanout.h) \
+    $(wildcard include/config/rcu/fanout/leaf.h) \
+  arch/x86/include/asm/mmu.h \
+    $(wildcard include/config/modify/ldt/syscall.h) \
   include/linux/page-flags.h \
     $(wildcard include/config/arch/uses/pg/uncached.h) \
     $(wildcard include/config/memory/failure.h) \
@@ -495,15 +579,8 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/arch/has/add/pages.h) \
     $(wildcard include/config/have/arch/nodedata/extension.h) \
     $(wildcard include/config/have/bootmem/info/node.h) \
-  include/linux/notifier.h \
-  include/linux/srcu.h \
-    $(wildcard include/config/tiny/srcu.h) \
-    $(wildcard include/config/srcu.h) \
-  include/linux/rcu_segcblist.h \
-  include/linux/srcutree.h \
-  include/linux/rcu_node_tree.h \
-    $(wildcard include/config/rcu/fanout.h) \
-    $(wildcard include/config/rcu/fanout/leaf.h) \
+  arch/x86/include/asm/mmzone.h \
+  arch/x86/include/asm/mmzone_64.h \
   include/linux/topology.h \
     $(wildcard include/config/use/percpu/numa/node/id.h) \
     $(wildcard include/config/sched/smt.h) \
@@ -512,9 +589,15 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
   include/linux/percpu.h \
     $(wildcard include/config/need/per/cpu/embed/first/chunk.h) \
     $(wildcard include/config/need/per/cpu/page/first/chunk.h) \
-  arch/arm/include/asm/topology.h \
-    $(wildcard include/config/arm/cpu/topology.h) \
-    $(wildcard include/config/bl/switcher.h) \
+  arch/x86/include/asm/topology.h \
+    $(wildcard include/config/sched/mc/prio.h) \
+    $(wildcard include/config/acpi/cppc/lib.h) \
+  arch/x86/include/asm/mpspec.h \
+    $(wildcard include/config/eisa.h) \
+    $(wildcard include/config/x86/mpparse.h) \
+  arch/x86/include/asm/mpspec_def.h \
+  arch/x86/include/asm/x86_init.h \
+  arch/x86/include/asm/apicdef.h \
   include/asm-generic/topology.h \
   include/linux/sysctl.h \
     $(wildcard include/config/sysctl.h) \
@@ -522,26 +605,13 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
   include/linux/elf.h \
     $(wildcard include/config/arch/use/gnu/property.h) \
     $(wildcard include/config/arch/have/elf/prot.h) \
-  arch/arm/include/asm/elf.h \
-  arch/arm/include/asm/vdso_datapage.h \
-  include/vdso/datapage.h \
-    $(wildcard include/config/arch/has/vdso/data.h) \
-  include/uapi/asm-generic/errno-base.h \
-  include/vdso/clocksource.h \
-    $(wildcard include/config/generic/gettimeofday.h) \
-  arch/arm/include/asm/vdso/clocksource.h \
-  include/vdso/processor.h \
-  arch/arm/include/asm/vdso/gettimeofday.h \
-    $(wildcard include/config/arm/arch/timer.h) \
-  arch/arm/include/asm/unistd.h \
-    $(wildcard include/config/oabi/compat.h) \
-  arch/arm/include/uapi/asm/unistd.h \
-  arch/arm/include/generated/uapi/asm/unistd-eabi.h \
-  arch/arm/include/generated/uapi/asm/unistd-common.h \
-  arch/arm/include/generated/asm/unistd-nr.h \
-  arch/arm/include/asm/vdso/cp15.h \
-    $(wildcard include/config/cpu/cp15.h) \
-  arch/arm/include/asm/user.h \
+  arch/x86/include/asm/elf.h \
+    $(wildcard include/config/x86/x32/abi.h) \
+  arch/x86/include/asm/user.h \
+  arch/x86/include/asm/user_64.h \
+  arch/x86/include/asm/fsgsbase.h \
+  arch/x86/include/asm/vdso.h \
+    $(wildcard include/config/x86/x32.h) \
   include/uapi/linux/elf.h \
   include/uapi/linux/elf-em.h \
   include/linux/kobject.h \
@@ -555,8 +625,6 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
   include/linux/xarray.h \
     $(wildcard include/config/xarray/multi.h) \
   include/linux/kconfig.h \
-  include/linux/local_lock.h \
-  include/linux/local_lock_internal.h \
   include/linux/kobject_ns.h \
   include/linux/kref.h \
   include/linux/refcount.h \
@@ -564,23 +632,18 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/alpha.h) \
     $(wildcard include/config/ia64.h) \
     $(wildcard include/config/ppc64.h) \
-  include/linux/jump_label.h \
-    $(wildcard include/config/have/arch/jump/label/relative.h) \
-  arch/arm/include/asm/jump_label.h \
   include/linux/rbtree_latch.h \
   include/linux/error-injection.h \
   include/asm-generic/error-injection.h \
-  include/linux/tracepoint-defs.h \
-  include/linux/static_key.h \
   include/linux/static_call_types.h \
     $(wildcard include/config/have/static/call.h) \
-  arch/arm/include/asm/module.h \
-    $(wildcard include/config/arm/unwind.h) \
-    $(wildcard include/config/arm/module/plts.h) \
+  arch/x86/include/asm/module.h \
+    $(wildcard include/config/unwinder/orc.h) \
   include/asm-generic/module.h \
     $(wildcard include/config/have/mod/arch/specific.h) \
     $(wildcard include/config/modules/use/elf/rel.h) \
     $(wildcard include/config/modules/use/elf/rela.h) \
+  arch/x86/include/asm/orc_types.h \
   include/linux/fs.h \
     $(wildcard include/config/read/only/thp/for/fs.h) \
     $(wildcard include/config/fs/posix/acl.h) \
@@ -593,8 +656,8 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/fs/verity.h) \
     $(wildcard include/config/epoll.h) \
     $(wildcard include/config/unicode.h) \
-    $(wildcard include/config/compat.h) \
     $(wildcard include/config/quota.h) \
+    $(wildcard include/config/blk/dev/loop.h) \
     $(wildcard include/config/fs/dax.h) \
     $(wildcard include/config/mandatory/file/locking.h) \
     $(wildcard include/config/block.h) \
@@ -625,7 +688,7 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
   include/linux/fcntl.h \
     $(wildcard include/config/arch/32bit/off/t.h) \
   include/uapi/linux/fcntl.h \
-  arch/arm/include/uapi/asm/fcntl.h \
+  arch/x86/include/generated/uapi/asm/fcntl.h \
   include/uapi/asm-generic/fcntl.h \
   include/uapi/linux/openat2.h \
   include/linux/migrate_mode.h \
@@ -638,15 +701,13 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/audit.h) \
     $(wildcard include/config/stack/growsup.h) \
   include/linux/signal.h \
-    $(wildcard include/config/proc/fs.h) \
   include/linux/signal_types.h \
     $(wildcard include/config/old/sigaction.h) \
   include/uapi/linux/signal.h \
-  arch/arm/include/asm/signal.h \
-  arch/arm/include/uapi/asm/signal.h \
+  arch/x86/include/asm/signal.h \
+  arch/x86/include/uapi/asm/signal.h \
   include/uapi/asm-generic/signal-defs.h \
-  arch/arm/include/uapi/asm/sigcontext.h \
-  arch/arm/include/generated/uapi/asm/siginfo.h \
+  arch/x86/include/uapi/asm/siginfo.h \
   include/uapi/asm-generic/siginfo.h \
   include/linux/sched.h \
     $(wildcard include/config/virt/cpu/accounting/native.h) \
@@ -657,6 +718,7 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/rt/mutexes.h) \
     $(wildcard include/config/uclamp/task.h) \
     $(wildcard include/config/uclamp/buckets/count.h) \
+    $(wildcard include/config/kmap/local.h) \
     $(wildcard include/config/cgroup/sched.h) \
     $(wildcard include/config/blk/dev/io/trace.h) \
     $(wildcard include/config/tasks/trace/rcu.h) \
@@ -664,7 +726,6 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/compat/brk.h) \
     $(wildcard include/config/cgroups.h) \
     $(wildcard include/config/blk/cgroup.h) \
-    $(wildcard include/config/stackprotector.h) \
     $(wildcard include/config/arch/has/scaled/cputime.h) \
     $(wildcard include/config/virt/cpu/accounting/gen.h) \
     $(wildcard include/config/posix/cputimers.h) \
@@ -687,10 +748,12 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/latencytop.h) \
     $(wildcard include/config/kunit.h) \
     $(wildcard include/config/function/graph/tracer.h) \
+    $(wildcard include/config/kcov.h) \
     $(wildcard include/config/bcache.h) \
     $(wildcard include/config/vmap/stack.h) \
     $(wildcard include/config/gcc/plugin/stackleak.h) \
     $(wildcard include/config/x86/mce.h) \
+    $(wildcard include/config/kretprobes.h) \
     $(wildcard include/config/arch/task/struct/on/stack.h) \
     $(wildcard include/config/debug/rseq.h) \
   include/uapi/linux/sched.h \
@@ -699,16 +762,15 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
   include/linux/ipc.h \
   include/linux/rhashtable-types.h \
   include/uapi/linux/ipc.h \
-  arch/arm/include/generated/uapi/asm/ipcbuf.h \
+  arch/x86/include/generated/uapi/asm/ipcbuf.h \
   include/uapi/asm-generic/ipcbuf.h \
-  arch/arm/include/generated/uapi/asm/sembuf.h \
-  include/uapi/asm-generic/sembuf.h \
+  arch/x86/include/uapi/asm/sembuf.h \
   include/linux/shm.h \
   include/uapi/linux/shm.h \
   include/uapi/asm-generic/hugetlb_encode.h \
-  arch/arm/include/generated/uapi/asm/shmbuf.h \
+  arch/x86/include/uapi/asm/shmbuf.h \
   include/uapi/asm-generic/shmbuf.h \
-  arch/arm/include/asm/shmparam.h \
+  arch/x86/include/asm/shmparam.h \
   include/linux/kcov.h \
   include/uapi/linux/kcov.h \
   include/linux/plist.h \
@@ -724,18 +786,26 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/have/arch/seccomp/filter.h) \
     $(wildcard include/config/seccomp/filter.h) \
     $(wildcard include/config/checkpoint/restore.h) \
+    $(wildcard include/config/seccomp/cache/debug.h) \
   include/uapi/linux/seccomp.h \
-  arch/arm/include/generated/asm/seccomp.h \
+  arch/x86/include/asm/seccomp.h \
+  arch/x86/include/asm/unistd.h \
+  arch/x86/include/uapi/asm/unistd.h \
+  arch/x86/include/generated/uapi/asm/unistd_64.h \
+  arch/x86/include/generated/asm/unistd_64_x32.h \
+  arch/x86/include/generated/asm/unistd_32_ia32.h \
+  arch/x86/include/asm/ia32_unistd.h \
   include/asm-generic/seccomp.h \
   include/uapi/linux/unistd.h \
   include/linux/resource.h \
   include/uapi/linux/resource.h \
-  arch/arm/include/generated/uapi/asm/resource.h \
+  arch/x86/include/generated/uapi/asm/resource.h \
   include/asm-generic/resource.h \
   include/uapi/asm-generic/resource.h \
   include/linux/latencytop.h \
   include/linux/sched/prio.h \
   include/linux/sched/types.h \
+  include/linux/syscall_user_dispatch.h \
   include/linux/task_io_accounting.h \
     $(wildcard include/config/task/io/accounting.h) \
   include/linux/posix-timers.h \
@@ -744,6 +814,9 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
   include/linux/task_work.h \
   include/uapi/linux/rseq.h \
   include/linux/kcsan.h \
+  arch/x86/include/generated/asm/kmap_size.h \
+  include/asm-generic/kmap_size.h \
+    $(wildcard include/config/debug/kmap/local.h) \
   include/linux/sched/jobctl.h \
   include/linux/sched/task.h \
     $(wildcard include/config/have/exit/thread.h) \
@@ -753,16 +826,14 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/set/fs.h) \
   include/linux/fault-inject-usercopy.h \
     $(wildcard include/config/fault/injection/usercopy.h) \
-  include/linux/instrumented.h \
-  arch/arm/include/asm/uaccess.h \
-    $(wildcard include/config/cpu/sw/domain/pan.h) \
-    $(wildcard include/config/cpu/use/domains.h) \
-    $(wildcard include/config/uaccess/with/memcpy.h) \
-  arch/arm/include/asm/domain.h \
-    $(wildcard include/config/io/36.h) \
-    $(wildcard include/config/cpu/cp15/mmu.h) \
-  arch/arm/include/generated/asm/extable.h \
-  include/asm-generic/extable.h \
+  arch/x86/include/asm/uaccess.h \
+    $(wildcard include/config/cc/has/asm/goto/output.h) \
+    $(wildcard include/config/cc/asm/goto/output.h) \
+    $(wildcard include/config/arch/has/copy/mc.h) \
+    $(wildcard include/config/x86/intel/usercopy.h) \
+  arch/x86/include/asm/smap.h \
+  arch/x86/include/asm/extable.h \
+  arch/x86/include/asm/uaccess_64.h \
   include/linux/cred.h \
     $(wildcard include/config/debug/credentials.h) \
   include/linux/key.h \
@@ -786,10 +857,6 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
   include/linux/iocontext.h \
   include/linux/fs_types.h \
   include/uapi/linux/fs.h \
-  include/uapi/linux/ioctl.h \
-  arch/arm/include/generated/uapi/asm/ioctl.h \
-  include/asm-generic/ioctl.h \
-  include/uapi/asm-generic/ioctl.h \
   include/linux/quota.h \
     $(wildcard include/config/quota/netlink/interface.h) \
   include/linux/percpu_counter.h \
@@ -824,6 +891,7 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
   include/linux/sched/topology.h \
     $(wildcard include/config/sched/debug.h) \
     $(wildcard include/config/sched/mc.h) \
+    $(wildcard include/config/cpu/freq/gov/schedutil.h) \
   include/linux/sched/idle.h \
   include/linux/sched/sd_flags.h \
   include/linux/ioport.h \
@@ -839,10 +907,7 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/acpi.h) \
   include/linux/device/class.h \
   include/linux/device/driver.h \
-  arch/arm/include/asm/device.h \
-    $(wildcard include/config/dmabounce.h) \
-    $(wildcard include/config/arm/dma/use/iommu.h) \
-    $(wildcard include/config/arch/omap.h) \
+  arch/x86/include/asm/device.h \
   include/linux/pm_wakeup.h \
   include/linux/slab.h \
     $(wildcard include/config/debug/slab.h) \
@@ -853,8 +918,8 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/slob.h) \
   include/linux/percpu-refcount.h \
   include/linux/kasan.h \
+    $(wildcard include/config/kasan/stack.h) \
     $(wildcard include/config/kasan/vmalloc.h) \
-    $(wildcard include/config/kasan/generic.h) \
     $(wildcard include/config/kasan/inline.h) \
   include/linux/i2c.h \
     $(wildcard include/config/i2c.h) \
@@ -863,7 +928,6 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/i2c/mux.h) \
   include/linux/acpi.h \
     $(wildcard include/config/acpi/debugger.h) \
-    $(wildcard include/config/x86.h) \
     $(wildcard include/config/acpi/processor/cstate.h) \
     $(wildcard include/config/acpi/hotplug/cpu.h) \
     $(wildcard include/config/acpi/hotplug/ioapic.h) \
@@ -905,6 +969,7 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
     $(wildcard include/config/acpi/reduced/hardware/only.h) \
     $(wildcard include/config/acpi/debug.h) \
   include/linux/ctype.h \
+  arch/x86/include/asm/acenv.h \
   include/acpi/acnames.h \
   include/acpi/actypes.h \
   include/acpi/acexcep.h \
@@ -921,8 +986,50 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
   include/acpi/acpixf.h \
   include/acpi/acconfig.h \
   include/acpi/acbuffer.h \
+  include/acpi/acpi_bus.h \
+    $(wildcard include/config/acpi/system/power/states/support.h) \
+    $(wildcard include/config/acpi/sleep.h) \
+  include/acpi/acpi_drivers.h \
+    $(wildcard include/config/acpi/dock.h) \
   include/acpi/acpi_numa.h \
     $(wildcard include/config/acpi/hmat.h) \
+  include/acpi/acpi_io.h \
+  include/linux/io.h \
+    $(wildcard include/config/have/arch/huge/vmap.h) \
+    $(wildcard include/config/has/ioport/map.h) \
+  arch/x86/include/asm/io.h \
+    $(wildcard include/config/mtrr.h) \
+    $(wildcard include/config/x86/pat.h) \
+  arch/x86/include/generated/asm/early_ioremap.h \
+  include/asm-generic/early_ioremap.h \
+    $(wildcard include/config/generic/early/ioremap.h) \
+  include/asm-generic/iomap.h \
+    $(wildcard include/config/generic/iomap.h) \
+  include/asm-generic/pci_iomap.h \
+    $(wildcard include/config/no/generic/pci/ioport/map.h) \
+    $(wildcard include/config/generic/pci/iomap.h) \
+  include/asm-generic/io.h \
+    $(wildcard include/config/generic/ioremap.h) \
+    $(wildcard include/config/virt/to/bus.h) \
+    $(wildcard include/config/generic/devmem/is/allowed.h) \
+  include/linux/logic_pio.h \
+    $(wildcard include/config/indirect/pio.h) \
+  include/linux/vmalloc.h \
+  arch/x86/include/asm/vmalloc.h \
+  arch/x86/include/asm/pgtable_areas.h \
+  arch/x86/include/asm/acpi.h \
+    $(wildcard include/config/acpi/apei.h) \
+  include/acpi/pdc_intel.h \
+  arch/x86/include/asm/numa.h \
+    $(wildcard include/config/numa/emu.h) \
+  arch/x86/include/asm/fixmap.h \
+    $(wildcard include/config/provide/ohci1394/dma/init.h) \
+    $(wildcard include/config/pci/mmconfig.h) \
+    $(wildcard include/config/x86/intel/mid.h) \
+    $(wildcard include/config/acpi/apei/ghes.h) \
+    $(wildcard include/config/intel/txt.h) \
+  arch/x86/include/uapi/asm/vsyscall.h \
+  include/asm-generic/fixmap.h \
   include/linux/rtmutex.h \
     $(wildcard include/config/debug/rt/mutexes.h) \
   include/uapi/linux/i2c.h \
@@ -933,7 +1040,8 @@ deps_/home/pi/driver/5_oled_driver/oleddri.o := \
   include/linux/irqnr.h \
   include/uapi/linux/irqnr.h \
   include/linux/prandom.h \
+  arch/x86/include/asm/archrandom.h \
 
-/home/pi/driver/5_oled_driver/oleddri.o: $(deps_/home/pi/driver/5_oled_driver/oleddri.o)
+/home/nevil/project/raspi/driver/5_oled_driver/oleddri.o: $(deps_/home/nevil/project/raspi/driver/5_oled_driver/oleddri.o)
 
-$(deps_/home/pi/driver/5_oled_driver/oleddri.o):
+$(deps_/home/nevil/project/raspi/driver/5_oled_driver/oleddri.o):

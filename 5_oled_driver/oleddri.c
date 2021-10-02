@@ -89,19 +89,28 @@ void ssd_draw_hline(int x,int y,int length){
 	}
 }
 
-void ssd_display(void) {
-	int x,y;
+//void ssd_display(void) {
+//	int x,y;
 
-	for(y = 0;y<8;y++) {
-		for(x = 0;x < 128;x++){
+//	for(y = 0;y<8;y++) {
+//		for(x = 0;x < 128;x++){
 			i2c_smbus_write_byte_data(ssd1306_i2c_client,0x40,display_ram[y][x]);
 	//		printk(KERN_CONT " %d", 0xff*display_ram[y][x]);
-		}
-	//printk("\n \r");	
+//		}
+//	//printk("\n \r");	
+//	}
+//}
+
+void ssd_display_test(void) {
+	int x,y;	
+	int dis_ram[128*2] = {0};
+	int i;
+	for(i = 0;i < 128;i++){
+	
+		dis_ram[i] = i;	
 	}
+	i2c_smbus_write_block_data(ssd1306_i2c_client,0x40,128,dis_ram);
 }
-
-
 
 u8 ssd_init(void) {
 
@@ -150,7 +159,7 @@ u8 ssd_init(void) {
 		random_y = get_random_int() % 64;
 	       	random_len = get_random_int() % 10;
 		ssd_draw_hline(random_x ,random_y ,random_len );
-		ssd_display();
+		ssd_display_test();
 	}
 
 	return 0;
