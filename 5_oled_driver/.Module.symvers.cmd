@@ -1,1 +1,1 @@
-cmd_/home/nevil/project/raspi/driver/5_oled_driver/Module.symvers := sed 's/ko$$/o/' /home/nevil/project/raspi/driver/5_oled_driver/modules.order | scripts/mod/modpost -m -a   -o /home/nevil/project/raspi/driver/5_oled_driver/Module.symvers -e -i Module.symvers   -T -
+cmd_/home/pi/kernel/Raspi_kernel_module_Learning/5_oled_driver/Module.symvers := sed 's/ko$$/o/' /home/pi/kernel/Raspi_kernel_module_Learning/5_oled_driver/modules.order | scripts/mod/modpost -m -a   -o /home/pi/kernel/Raspi_kernel_module_Learning/5_oled_driver/Module.symvers -e -i Module.symvers   -T -

@@ -42,8 +42,13 @@ static struct i2c_driver ssd_driver = {
 	}
 };
 
+struct ssd_1306 {
+	u8 width;
+	u8 height;
+	u8 page_size;
+	u8 *displayRam;
+}oled;
 
-u8 display_ram[8][128];
 
 static struct i2c_board_info ssd_i2c_board_info = {
 	I2C_BOARD_INFO(SLAVE_DEVICE_NAME, SSD1306_SLAVE_ADDR) 
@@ -77,15 +82,16 @@ void ssd_clear(void) {
 
 
 void ssd_draw_hline(int x,int y,int length){
-	int i,page_number;int line;
+	int i, page_number, line, array_pointer;
 	
 	if(y>63 || ((x+length)>127))
 		return;
-	
+
 	page_number = y / 8;
+	array_pointer = (page_number * oled.width) + x;
 	line = y % 8;
 	for(i=0;i<length;i++){
-	display_ram[page_number][x+i] = 1<<line;
+	oled.displayRam[array_pointer++] = 1<<line;
 	}
 }
 
@@ -94,7 +100,7 @@ void ssd_draw_hline(int x,int y,int length){
 
 //	for(y = 0;y<8;y++) {
 //		for(x = 0;x < 128;x++){
-			i2c_smbus_write_byte_data(ssd1306_i2c_client,0x40,display_ram[y][x]);
+//			i2c_smbus_write_byte_data(ssd1306_i2c_client,0x40,display_ram[y][x]);
 	//		printk(KERN_CONT " %d", 0xff*display_ram[y][x]);
 //		}
 //	//printk("\n \r");	
@@ -103,17 +109,27 @@ void ssd_draw_hline(int x,int y,int length){
 
 void ssd_display_test(void) {
 	int x,y;	
-	int dis_ram[128*2] = {0};
 	int i;
-	for(i = 0;i < 128;i++){
-	
-		dis_ram[i] = i;	
-	}
-	i2c_smbus_write_block_data(ssd1306_i2c_client,0x40,128,dis_ram);
+//	for(i = 0;i < 128;i++)
+//		oled.displayRam[i] = i;	
+	ssd_send_command(0x21);	ssd_send_command(0x0);ssd_send_command(0x7F); //Column Address
+	ssd_send_command(0x22);	ssd_send_command(0x00);ssd_send_command(0x07);//vertical Address
+
+	for(y = 0; y < 8; y++) {
+		i2c_smbus_write_i2c_block_data(ssd1306_i2c_client,0x40,32,oled.displayRam+(y*oled.width));
+		i2c_smbus_write_i2c_block_data(ssd1306_i2c_client,0x40,32,oled.displayRam+32+(y*oled.width));
+		i2c_smbus_write_i2c_block_data(ssd1306_i2c_client,0x40,32,oled.displayRam+64+(y*oled.width));
+		i2c_smbus_write_i2c_block_data(ssd1306_i2c_client,0x40,32,oled.displayRam+96+(y*oled.width));
+}
 }
 
 u8 ssd_init(void) {
-
+	oled.height = 8;
+	oled.width = 128;
+	oled.page_size = 8;
+	u8 display_ram[oled.height * oled.width];
+	oled.displayRam = display_ram;
+	memset(oled.displayRam,0,(oled.height * oled.width));
 	ssd_send_command(0xAE);
 	ssd_send_command(0xD5);
 	ssd_send_command(0x80);
@@ -142,25 +158,28 @@ u8 ssd_init(void) {
 	if(ret !=0)
 	    return -1;
 	ssd_clear();
-	i2c_smbus_write_byte_data(ssd1306_i2c_client,0x40,0xFF);
-	i2c_smbus_write_byte_data(ssd1306_i2c_client,0x18,0x18);
-	i2c_smbus_write_byte_data(ssd1306_i2c_client,0x18,0xFF);
+//	i2c_smbus_write_byte_data(ssd1306_i2c_client,0x40,0xFF);
+//	i2c_smbus_write_byte_data(ssd1306_i2c_client,0x18,0x18);
+//	i2c_smbus_write_byte_data(ssd1306_i2c_client,0x18,0xFF);
 //	i2c_smbus_write_byte_data(ssd1306_i2c_client,0xFF,0x0);    
 //	i2c_smbus_write_byte_data(ssd1306_i2c_client,0x40,0xFF);
   
 	printk("initiliased \n");
-	ssd_clear();	
-	ssd_draw_hline(2,16,40);
-	ssd_display();
 	int loop,random_x,random_y,random_len;
-	for(loop=0;loop<200;loop++){
-	
+	for(loop=0;loop<300;loop++){
 		random_x = get_random_int() % 128;
 		random_y = get_random_int() % 64;
 	       	random_len = get_random_int() % 10;
 		ssd_draw_hline(random_x ,random_y ,random_len );
-		ssd_display_test();
-	}
+
+//		ssd_draw_hline(0 ,0  ,10 );
+//		ssd_draw_hline(0 ,1  ,10 );
+//		ssd_draw_hline(0 ,2 ,10 );
+//		ssd_draw_hline(0 ,3 ,10 );
+//		ssd_draw_hline(0 ,4 ,10 );
+////		ssd_draw_hline(0 ,5 ,10 );
+	ssd_display_test();
+}
 
 	return 0;
 }

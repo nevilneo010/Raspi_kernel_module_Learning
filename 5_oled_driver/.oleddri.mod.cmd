@@ -1,1 +1,1 @@
-cmd_/home/nevil/project/raspi/driver/5_oled_driver/oleddri.mod := { echo  /home/nevil/project/raspi/driver/5_oled_driver/oleddri.o;  echo; } > /home/nevil/project/raspi/driver/5_oled_driver/oleddri.mod
+cmd_/home/pi/kernel/Raspi_kernel_module_Learning/5_oled_driver/oleddri.mod := { echo  /home/pi/kernel/Raspi_kernel_module_Learning/5_oled_driver/oleddri.o;  echo; } > /home/pi/kernel/Raspi_kernel_module_Learning/5_oled_driver/oleddri.mod

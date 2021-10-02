@@ -1,1 +1,1 @@
-cmd_/home/nevil/project/raspi/driver/5_oled_driver/modules.order := {   echo /home/nevil/project/raspi/driver/5_oled_driver/oleddri.ko; :; } | awk '!x[$$0]++' - > /home/nevil/project/raspi/driver/5_oled_driver/modules.order
+cmd_/home/pi/kernel/Raspi_kernel_module_Learning/5_oled_driver/modules.order := {   echo /home/pi/kernel/Raspi_kernel_module_Learning/5_oled_driver/oleddri.ko; :; } | awk '!x[$$0]++' - > /home/pi/kernel/Raspi_kernel_module_Learning/5_oled_driver/modules.order

@@ -1,2 +1,2 @@
-/home/nevil/project/raspi/driver/5_oled_driver/oleddri.o
+/home/pi/kernel/Raspi_kernel_module_Learning/5_oled_driver/oleddri.o
 
