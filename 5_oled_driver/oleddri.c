@@ -79,7 +79,7 @@ void ssd_clear(void) {
 	ssd_send_command(0x21);	ssd_send_command(0x0);ssd_send_command(0x7F); //Column Address
 	ssd_send_command(0x22);	ssd_send_command(0x00);ssd_send_command(0x07);//vertical Address
 }
-
+i
 
 void ssd_draw_hline(int x,int y,int length){
 	int i, page_number, line, array_pointer;
@@ -94,6 +94,23 @@ void ssd_draw_hline(int x,int y,int length){
 	oled.displayRam[array_pointer++] = 1<<line;
 	}
 }
+
+
+void ssd_draw_vline(int x,int y,int length){
+	int i, page_number, line, array_pointer;
+	
+	if(((y + length) > 63) || ((x) > 127))
+		return;
+
+	page_number = y / 8;
+	array_pointer = (page_number * oled.width) + x;
+	line = y % 8;
+	for(i=0;i<length;i++){
+	oled.displayRam[array_pointer++] = 1<<line;
+	}
+}
+
+
 
 //void ssd_display(void) {
 //	int x,y;
